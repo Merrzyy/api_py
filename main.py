@@ -183,7 +183,7 @@ async def filter_idols(
       raise HTTPException(status_code=404, detail="No idols found matching the filter criteria.")
     return [dict(row) for row in result]
 
-port = int(os.getenv("PORT", 8000))  # Use Railway's PORT or default to 8000
+port = int(os.getenv("PORT", 8080))  # Use Railway's PORT or default to 8000
 
 if __name__ == "__main__":
     import uvicorn
